@@ -23,7 +23,7 @@ export class RadioTheaterComponent {
   scenes = signal<any[]>([]);
 
   createScript(filename: string) {
-    fetch(`/assets/radio-theater/${filename}`)
+    fetch(`./assets/radio-theater/${filename}`)
       .then((response) => response.json())
       .then((scriptData) => {
         this.characters.set(scriptData.characters);

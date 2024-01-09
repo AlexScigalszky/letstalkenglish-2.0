@@ -22,7 +22,7 @@ export class ColaborativeStoryComponent {
   loadStory(selectedStory: string) {
     this.data = null;
     this.story = null;
-    fetch(`/assets/colaborative-story/${selectedStory}`)
+    fetch(`./assets/colaborative-story/${selectedStory}`)
       .then((response) => response.json())
       .then((storyData) => {
         this.data = storyData;

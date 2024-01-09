@@ -12,7 +12,7 @@ export class VocabularyComponent {
   carJson: any;
 
   loadSelectedJson(selected: string) {
-    fetch(`/assets/vocabulary/${selected}`)
+    fetch(`./assets/vocabulary/${selected}`)
       .then((response) => response.json())
       .then((carJson) => (this.carJson = carJson))
       .catch((error) => console.error(`Error loading ${selected}:`, error));
