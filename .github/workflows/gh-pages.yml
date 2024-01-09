@@ -24,5 +24,9 @@ jobs:
         run: npm run build:prod
 
       - name: Deploy GitHub Pages site
-        uses: actions/deploy-pages@v4.0.2
+        uses: crazy-max/ghaction-github-pages@v4.0.0
+        with:
+          build_dir: dist/
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           
