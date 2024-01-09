@@ -1,0 +1,21 @@
+#game-container {
+  max-width: 600px;
+  margin: auto;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#result-box {
+  margin-top: 20px;
+  background-color: #222;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #611;
+}
+
+#result {
+  font-weight: bold;
+  font-size: 2rem;
+}

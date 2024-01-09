@@ -1,0 +1,9 @@
+<h1>Let's introduce ourserves</h1>
+<div *ngIf="current() as item">
+  <div class="corner top-left" id="name">{{ item[0] }}</div>
+  <div class="corner top-right" id="place">{{ item[1] }}</div>
+  <div class="corner bottom-left" id="color">{{ item[2] }}</div>
+  <div class="corner bottom-right" id="hobby">{{ item[3] }}</div>
+</div>
+
+<a (click)="changeValues()">Change Values</a>

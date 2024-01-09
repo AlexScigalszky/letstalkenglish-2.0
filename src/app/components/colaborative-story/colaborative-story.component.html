@@ -1,0 +1,28 @@
+<div id="form" class="form">
+  <label for="storySelector">Select Story:</label>
+  <select>
+    <option
+      *ngFor="let story of stories; index as i"
+      [value]="i"
+      (click)="loadStory(story)"
+    >
+      {{ story }}
+    </option>
+  </select>
+
+  <div id="input-container" *ngIf="data?.inputs as inputs">
+    <div *ngFor="let input of inputs" class="row">
+      <label for="{{ input.id }}"> {{ input.label }}: </label>
+      <input
+        type="text"
+        [id]="input.id"
+        [placeholder]="input.default"
+        [value]="input.default"
+        (change)="onChangeValue($event, input.id)"
+      />
+    </div>
+    <button id="show-story" (click)="showStory()">Show Story</button>
+  </div>
+</div>
+
+<div id="result" *ngIf="story !== null" [innerHTML]="story"></div>

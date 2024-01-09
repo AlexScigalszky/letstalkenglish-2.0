@@ -1,0 +1,31 @@
+<select id="jsonSelect">
+  <option value="car.json" (click)="loadSelectedJson('car.json')">Car</option>
+  <option value="men.json" (click)="loadSelectedJson('men.json')">Men</option>
+  <option value="women.json" (click)="loadSelectedJson('women.json')">
+    Women
+  </option>
+  <option value="office.json" (click)="loadSelectedJson('office.json')">
+    Office
+  </option>
+</select>
+
+<div id="carContainer" *ngIf="carJson">
+  <img
+    [src]="'/assets/vocabulary/'+carJson.imageSrc"
+    alt="Car Image"
+    [style]="
+      'width:{{carJson.imageWidth}}px;height:' +
+      carJson.imageHeight +
+      'px;position: absolute;'
+    "
+  />
+
+  <input
+    *ngFor="let part of carJson.parts"
+    type="text"
+    class="part-input"
+    [title]="part.name"
+    [style.top]="part.position.top + 'px'"
+    [style.left]="part.position.left + 'px'"
+  />
+</div>

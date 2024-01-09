@@ -1,0 +1,47 @@
+body {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+.corner {
+  position: absolute;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-color: #611;
+  border-style: dashed;
+  border-radius: 20px;
+}
+
+.top-left {
+  top: 30%;
+  left: 30%;
+}
+
+.top-right {
+  top: 30%;
+  right: 30%;
+}
+
+.bottom-left {
+  bottom: 30%;
+  left: 30%;
+}
+
+.bottom-right {
+  bottom: 30%;
+  right: 30%;
+}
+
+a {
+  bottom: 10%;
+  margin: 0 auto;
+  display: block;
+}
+
+h1 {
+  align-self: center;
+  text-align: center;
+  width: 100%;
+}

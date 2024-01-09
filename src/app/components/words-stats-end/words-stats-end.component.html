@@ -1,0 +1,17 @@
+<label id="work-label" for="word">{{ currentLabel() }}</label>
+<div>
+  <input
+    #wordInput
+    type="text"
+    id="word"
+    [ngModel]="word()"
+    (input)="word.set(wordInput.value)"
+  />
+</div>
+<button type="button" (click)="restrictNextWord()">ADD WORD</button>
+
+<div id="result" *ngIf="wordAdded() as added">Word added: {{ added }}</div>
+
+<div id="result-list" *ngIf="words.length > 0">
+  <p *ngFor="let word of words">{{ word }}</p>
+</div>

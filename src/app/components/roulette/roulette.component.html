@@ -1,0 +1,15 @@
+<div>
+    <label for="inputNames">Enter Names (comma-separated):</label>
+</div>
+<input
+  #namesInput
+  type="text"
+  id="inputNames"
+  placeholder="Alice, Bob, Charlie, ..."
+  [ngModel]="inputNames()"
+  (input)="inputNames.set(namesInput.value)"
+/>
+
+<button (click)="selectRandomPerson()">Select Random Person</button>
+
+<div id="result" *ngIf="selectedPerson() as selected"> {{selected}}</div>

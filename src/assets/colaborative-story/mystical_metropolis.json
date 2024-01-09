@@ -1,0 +1,61 @@
+{
+    "title": "Mystical Metropolis",
+    "inputs": [
+        {
+            "label": "City Name",
+            "id": "cityName",
+            "default": "Unknown"
+        },
+        {
+            "label": "Animal",
+            "id": "animal",
+            "default": "Unknown"
+        },
+        {
+            "label": "Your Name",
+            "id": "yourName",
+            "default": "Unknown"
+        },
+        {
+            "label": "Place",
+            "id": "place",
+            "default": "Unknown"
+        },
+        {
+            "label": "Object",
+            "id": "object",
+            "default": "Unknown"
+        },
+        {
+            "label": "Superhero",
+            "id": "superhero",
+            "default": "Unknown"
+        },
+        {
+            "label": "Strange Power",
+            "id": "incrediblePower",
+            "default": "Unknown"
+        },
+        {
+            "label": "Band Name",
+            "id": "villains",
+            "default": "Unknown"
+        },
+        {
+            "label": "Another Place",
+            "id": "famousPlace",
+            "default": "Unknown"
+        },
+        {
+            "label": "Comic Character",
+            "id": "comicCharacter",
+            "default": "Unknown"
+        },
+        {
+            "label": "Another Object",
+            "id": "magicalObject",
+            "default": "Unknown"
+        }
+    ],
+    "story": "Once upon a time, in the bustling city of <span class=\"input-value\">{cityName}</span>, there was a fearless <span class=\"input-value\">{animal}</span> named <span class=\"input-value\">{yourName}</span>. One day, while strolling through the <span class=\"input-value\">{place}</span>, <span class=\"input-value\">{yourName}</span> stumbled upon a mysterious <span class=\"input-value\">{object}</span>.\n\nIntrigued, <span class=\"input-value\">{yourName}</span> decided to investigate and discovered that the <span class=\"input-value\">{object}</span> had magical powers. Upon touching it, <span class=\"input-value\">{yourName}</span> suddenly transformed into a <span class=\"input-value\">{superhero}</span>, with the ability to <span class=\"input-value\">{incrediblePower}</span>.\n\nExcited about <span class=\"input-value\">{yourName}</span>'s new identity, <span class=\"input-value\">{superhero}</span> set out to do good in the city. <span class=\"input-value\">{superhero}</span>'s first mission was to stop a group of <span class=\"input-value\">{villains}</span> planning to steal the <span class=\"input-value\">{magicalObject}</span>.\n\nThe battle between <span class=\"input-value\">{superhero}</span> and the <span class=\"input-value\">{villains}</span> led to unexpected places, like the <span class=\"input-value\">{famousPlace}</span>. Onlookers were amazed as <span class=\"input-value\">{superhero}</span> used his <span class=\"input-value\">{incrediblePower}</span> to confront the <span class=\"input-value\">{villains}</span>.\n\nJust when the situation seemed under control, a <span class=\"input-value\">{comicCharacter}</span> appeared out of nowhere and started telling jokes that made everyone, including the <span class=\"input-value\">{villains}</span>, burst into laughter.\n\nEventually, <span class=\"input-value\">{superhero}</span> managed to retrieve the <span class=\"input-value\">{magicalObject}</span> and restore peace to <span class=\"input-value\">{cityName}</span>. Grateful, the citizens celebrated the \"Day of Adventure in the City,\" remembering the incredible story of <span class=\"input-value\">{superhero}</span>.\n\nAnd so, <span class=\"input-value\">{superhero}</span> continued to protect the city, ready to face new adventures and challenges with his faithful friends <span class=\"input-value\">{comicCharacter}</span> and <span class=\"input-value\">{animal}</span>."
+}

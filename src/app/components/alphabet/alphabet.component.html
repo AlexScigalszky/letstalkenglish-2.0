@@ -1,0 +1,16 @@
+<form id="wordForm">
+  <div id="inputs">
+    <ng-container *ngFor="let letter of alphabet">
+      <label for="word${letter}">{{ letter }}:</label>
+      <input
+        type="text"
+        [id]="'word' + letter"
+        (change)="onChangeValue($event, letter)"
+      />
+    </ng-container>
+  </div>
+
+  <button type="button" (click)="collectWords()">Collect Words</button>
+</form>
+
+<div id="result" *ngIf="result() as rst" [innerHtml]="rst"></div>

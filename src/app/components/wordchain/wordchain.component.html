@@ -1,0 +1,26 @@
+<div id="game-container">
+  <h2>Word Chain Game</h2>
+  <p>Each player adds a word to create a sentence.</p>
+  <p>First, repeat the entire sentence and then add your word.</p>
+
+  <div>
+    <input
+      type="text"
+      id="wordInput"
+      #wordInput
+      [ngModel]="word()"
+      (input)="word.set(wordInput.value)"
+      placeholder="Your word"
+      (keyup)="onKeyDown($event)"
+    />
+    <button (click)="addWord()">Add Word</button>
+  </div>
+
+  <div id="result-box" *ngIf="finalSentence !== null">
+    <h3>Final Sentence</h3>
+    <div id="result">{{ finalSentence }}</div>
+  </div>
+  <br />
+
+  <button (click)="showSentence()">Show Sentence</button>
+</div>

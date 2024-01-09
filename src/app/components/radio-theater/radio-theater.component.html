@@ -1,0 +1,38 @@
+<h1>Radio Theater</h1>
+<div class="form">
+  <label for="jsonSelector">Participants:</label>
+  <select id="jsonSelector">
+    <option
+      *ngFor="let file of scriptFiles"
+      [value]="file.name"
+      (click)="createScript(file.file)"
+    >
+      {{ file.name }}
+    </option>
+  </select>
+</div>
+
+<div id="script-container">
+  <div class="scene-container">
+    <h3>Characters Presentation</h3>
+    <p
+      *ngFor="let char of characters(); index as i"
+      [class]="'character-line character-' + (i + 1)"
+    >
+      {{ char }}
+    </p>
+  </div>
+  <div *ngFor="let scene of scenes(); index as j" class="scene-container">
+    <h3>Scena N° {{ j + 1 }}: {{ scene.title }}</h3>
+
+    <div
+      *ngFor="let dialogue of scene.dialogues; index as h"
+      [class]="'character-line character-' + (h + 1)"
+    >
+      <div class="speaker">
+        {{ characters()[dialogue.characterIndex - 1] }}:
+      </div>
+      {{ dialogue.line }}
+    </div>
+  </div>
+</div>

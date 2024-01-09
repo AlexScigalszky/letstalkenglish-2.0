@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+#carContainer {
+  position: absolute;
+  margin: auto;
+}
+
+.part-input {
+  position: absolute;
+  background-color: #610;
+  color: #fff;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  width: 120px;
+  text-align: center;
+}
+
+#jsonSelect {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
