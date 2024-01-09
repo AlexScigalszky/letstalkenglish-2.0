@@ -35,7 +35,7 @@ export class WordchainComponent {
       this.sentence.set(currentSentence + ' ');
     }
 
-    this.sentence.set(currentSentence + newWord);
+    this.sentence.set(currentSentence + ' ' + newWord);
     this.word.set('');
   }
 
