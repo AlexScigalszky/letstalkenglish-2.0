@@ -1,0 +1,37 @@
+{
+    "title": "Mystery at Midnight",
+    "characters": [
+        "Detective Johnson",
+        "Mrs. Anderson",
+        "Mr. Smith",
+        "Narrator"
+    ],
+    "scenes": [
+        {
+            "title": "Detective's Office",
+            "dialogues": [
+                {
+                    "characterIndex": 4,
+                    "line": "It was a dark and stormy night. Detective Johnson sat in his dimly lit office, contemplating his latest case."
+                },
+                {
+                    "characterIndex": 1,
+                    "line": "(Thoughtfully) There's something fishy about the Andersons' mansion. I need to investigate."
+                }
+            ]
+        },
+        {
+            "title": "Andersons' Mansion",
+            "dialogues": [
+                {
+                    "characterIndex": 2,
+                    "line": "(Nervously) Detective Johnson, thank you for coming. Our priceless painting has disappeared."
+                },
+                {
+                    "characterIndex": 1,
+                    "line": "(Confidently) Don't worry, Mrs. Anderson. I'll get to the bottom of this."
+                }
+            ]
+        }
+    ]
+}
