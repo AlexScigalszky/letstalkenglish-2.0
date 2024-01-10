@@ -1,20 +1,28 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { Component, inject, signal } from '@angular/core';
+import { toObservable, toSignal } from '@angular/core/rxjs-interop';
+import { VocabularyModel } from '../../models/vocabulary';
+import { filter, switchMap } from 'rxjs';
 
 @Component({
   selector: 'app-vocabulary',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, HttpClientModule],
   templateUrl: './vocabulary.component.html',
   styleUrl: './vocabulary.component.scss',
 })
 export class VocabularyComponent {
-  carJson: any;
+  http = inject(HttpClient);
 
-  loadSelectedJson(selected: string) {
-    fetch(`./assets/vocabulary/${selected}`)
-      .then((response) => response.json())
-      .then((carJson) => (this.carJson = carJson))
-      .catch((error) => console.error(`Error loading ${selected}:`, error));
-  }
+  selectedJson = signal<string | null>(null);
+
+  private carJson$ = toObservable(this.selectedJson).pipe(
+    filter((selected) => selected !== null),
+    switchMap((selected) =>
+      this.http.get<VocabularyModel>(`./assets/vocabulary/${selected}`)
+    )
+  );
+
+  carJson = toSignal(this.carJson$, { initialValue: null });
 }

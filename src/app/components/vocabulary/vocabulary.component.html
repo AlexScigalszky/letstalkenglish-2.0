@@ -1,15 +1,15 @@
 <select id="jsonSelect">
-  <option value="car.json" (click)="loadSelectedJson('car.json')">Car</option>
-  <option value="men.json" (click)="loadSelectedJson('men.json')">Men</option>
-  <option value="women.json" (click)="loadSelectedJson('women.json')">
+  <option value="car.json" (click)="selectedJson.set('car.json')">Car</option>
+  <option value="men.json" (click)="selectedJson.set('men.json')">Men</option>
+  <option value="women.json" (click)="selectedJson.set('women.json')">
     Women
   </option>
-  <option value="office.json" (click)="loadSelectedJson('office.json')">
+  <option value="office.json" (click)="selectedJson.set('office.json')">
     Office
   </option>
 </select>
 
-<div id="carContainer" *ngIf="carJson">
+<div id="carContainer" *ngIf="carJson() as carJson">
   <img
     [src]="'./assets/vocabulary/'+carJson.imageSrc"
     alt="Car Image"
