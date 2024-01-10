@@ -1,14 +1,20 @@
 import { CommonModule } from '@angular/common';
-import { Component, signal } from '@angular/core';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { Component, inject, signal } from '@angular/core';
+import { toObservable, toSignal } from '@angular/core/rxjs-interop';
+import { filter, switchMap } from 'rxjs';
+import { Theater } from '../../models/theater';
 
 @Component({
   selector: 'app-radio-theater',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, HttpClientModule],
   templateUrl: './radio-theater.component.html',
   styleUrl: './radio-theater.component.scss',
 })
 export class RadioTheaterComponent {
+  http = inject(HttpClient);
+
   scriptFiles = [
     { name: '2', file: '2.json' },
     { name: '4', file: '4.json' },
@@ -19,19 +25,10 @@ export class RadioTheaterComponent {
     { name: '8', file: '8.json' },
     { name: '10', file: '10.json' },
   ];
-  characters = signal<any[]>([]);
-  scenes = signal<any[]>([]);
-
-  createScript(filename: string) {
-    fetch(`./assets/radio-theater/${filename}`)
-      .then((response) => response.json())
-      .then((scriptData) => {
-        this.characters.set(scriptData.characters);
-        this.scenes.set(scriptData.scenes);
-      })
-      .catch((error) => {
-        console.error('Error fetching JSON:', error.message);
-        alert('Error fetching JSON. Please try again.');
-      });
-  }
+  selected = signal<string|null>(null);
+  private scriptData$ = toObservable(this.selected).pipe(
+    filter(x => x!== null),
+    switchMap((filename)=> this.http.get<Theater>(`./assets/radio-theater/${filename}`))
+  )
+  scriptData = toSignal(this.scriptData$);
 }

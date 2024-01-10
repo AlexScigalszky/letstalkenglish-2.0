@@ -5,24 +5,27 @@
     <option
       *ngFor="let file of scriptFiles"
       [value]="file.name"
-      (click)="createScript(file.file)"
+      (click)="selected.set(file.file)"
     >
       {{ file.name }}
     </option>
   </select>
 </div>
 
-<div id="script-container">
+<div id="script-container" *ngIf="scriptData() as scriptData">
   <div class="scene-container">
     <h3>Characters Presentation</h3>
     <p
-      *ngFor="let char of characters(); index as i"
+      *ngFor="let char of scriptData.characters; index as i"
       [class]="'character-line character-' + (i + 1)"
     >
       {{ char }}
     </p>
   </div>
-  <div *ngFor="let scene of scenes(); index as j" class="scene-container">
+  <div
+    *ngFor="let scene of scriptData.scenes; index as j"
+    class="scene-container"
+  >
     <h3>Scena N° {{ j + 1 }}: {{ scene.title }}</h3>
 
     <div
@@ -30,7 +33,7 @@
       [class]="'character-line character-' + (h + 1)"
     >
       <div class="speaker">
-        {{ characters()[dialogue.characterIndex - 1] }}:
+        {{ scriptData.characters[dialogue.characterIndex - 1] }}:
       </div>
       {{ dialogue.line }}
     </div>
