@@ -4,13 +4,13 @@
     <option
       *ngFor="let story of stories; index as i"
       [value]="i"
-      (click)="loadStory(story)"
+      (click)="selected.set(story)"
     >
       {{ story }}
     </option>
   </select>
 
-  <div id="input-container" *ngIf="data?.inputs as inputs">
+  <div id="input-container" *ngIf="story()?.inputs as inputs">
     <div *ngFor="let input of inputs" class="row">
       <label for="{{ input.id }}"> {{ input.label }}: </label>
       <input
@@ -21,8 +21,10 @@
         (change)="onChangeValue($event, input.id)"
       />
     </div>
-    <button id="show-story" (click)="showStory()">Show Story</button>
+    <button id="show-story" (click)="showText.set(!showText())">
+      Show Story
+    </button>
   </div>
 </div>
 
-<div id="result" *ngIf="story !== null" [innerHTML]="story"></div>
+<div id="result" *ngIf="showText()" [innerHTML]="text()"></div>
