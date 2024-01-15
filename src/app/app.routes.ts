@@ -14,6 +14,7 @@ import { WordsStatsEndComponent } from './components/words-stats-end/words-stats
 import { VocabularyComponent } from './components/vocabulary/vocabulary.component';
 import { AbreviationsComponent } from './components/abreviations/abreviations.component';
 import { BlankComponent } from './components/blank/blank.component';
+import { HowDoYouDrawComponent } from './components/how-do-you-draw/how-do-you-draw.component';
 
 export const routes: Routes = [
   {
@@ -67,8 +68,28 @@ export const routes: Routes = [
     component: AbreviationsComponent,
   },
   {
-    title: 'Under construction',
-    path: 'under_construction',
+    title: 'How do you draw..?',
+    path: 'howdoyoudraw',
+    component: HowDoYouDrawComponent,
+  },
+  {
+    title: 'Where are you now?',
+    path: 'where/are/you',
     component: BlankComponent,
   },
+  {
+    title: 'International Alphabet',
+    path: 'international/alphabet',
+    component: BlankComponent,
+  },
+  {
+    title: 'Three thing to do in your life',
+    path: 'threethings',
+    component: BlankComponent,
+  },
+  {
+    title: 'Suggestions',
+    path: 'suggestions',
+    component: BlankComponent,
+  },  
 ];

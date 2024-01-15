@@ -18,7 +18,7 @@ export class DadjokesComponent {
   async fetchJokes() {
     try {
       const response = await fetch(
-        'https://icanhazdadjoke.com/search?limit=150',
+        'https://icanhazdadjoke.com/search?limit=500',
         {
           headers: {
             Accept: 'application/json',
