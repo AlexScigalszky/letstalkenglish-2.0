@@ -13,6 +13,7 @@ import { AlphabetComponent } from './components/alphabet/alphabet.component';
 import { WordsStatsEndComponent } from './components/words-stats-end/words-stats-end.component';
 import { VocabularyComponent } from './components/vocabulary/vocabulary.component';
 import { AbreviationsComponent } from './components/abreviations/abreviations.component';
+import { BlankComponent } from './components/blank/blank.component';
 
 export const routes: Routes = [
   {
@@ -64,5 +65,10 @@ export const routes: Routes = [
     title: 'Abbreviations',
     path: 'abreviations',
     component: AbreviationsComponent,
+  },
+  {
+    title: 'Under construction',
+    path: 'under_construction',
+    component: BlankComponent,
   },
 ];
