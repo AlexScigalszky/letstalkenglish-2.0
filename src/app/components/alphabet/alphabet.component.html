@@ -1,16 +1,19 @@
+<p>Complete each letter with a word that starts with the character</p>
 <form id="wordForm">
   <div id="inputs">
-    <ng-container *ngFor="let letter of alphabet">
-      <label for="word${letter}">{{ letter }}:</label>
-      <input
-        type="text"
-        [id]="'word' + letter"
-        (change)="onChangeValue($event, letter)"
-      />
-    </ng-container>
+    @for(letter of alphabet; track letter) {
+    <label for="word${letter}">{{ letter }}:</label>
+    <input
+      type="text"
+      [id]="'word' + letter"
+      (change)="onChangeValue($event, letter)"
+    />
+    }
   </div>
 
   <button type="button" (click)="collectWords()">Collect Words</button>
 </form>
 
-<div id="result" *ngIf="result() as rst" [innerHtml]="rst"></div>
+@if(result()){
+<div id="result" [innerHtml]="result()"></div>
+}

@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { Component, inject, signal } from '@angular/core';
+import { Component, computed, inject, signal } from '@angular/core';
 import { toObservable, toSignal } from '@angular/core/rxjs-interop';
 import { filter, switchMap } from 'rxjs';
 import { Theater } from '../../models/theater';
@@ -25,10 +25,14 @@ export class RadioTheaterComponent {
     { name: '8', file: '8.json' },
     { name: '10', file: '10.json' },
   ];
-  selected = signal<string|null>(null);
+  selected = signal<string | null>(null);
   private scriptData$ = toObservable(this.selected).pipe(
-    filter(x => x!== null),
-    switchMap((filename)=> this.http.get<Theater>(`./assets/radio-theater/${filename}`))
-  )
+    filter((x) => x !== null),
+    switchMap((filename) =>
+      this.http.get<Theater>(`./assets/radio-theater/${filename}`)
+    )
+  );
   scriptData = toSignal(this.scriptData$);
+  caracters = computed(() => this.scriptData()?.characters ?? []);
+  scenes = computed(() => this.scriptData()?.scenes ?? []);
 }

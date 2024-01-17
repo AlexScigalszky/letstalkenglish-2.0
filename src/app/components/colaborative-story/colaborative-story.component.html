@@ -1,17 +1,17 @@
 <div id="form" class="form">
   <label for="storySelector">Select Story:</label>
   <select>
-    <option
-      *ngFor="let story of stories; index as i"
-      [value]="i"
-      (click)="selected.set(story)"
-    >
+    @for(story of stories; track $index){
+    <option [value]="$index" (click)="selected.set(story)">
       {{ story }}
     </option>
+    }
   </select>
 
-  <div id="input-container" *ngIf="story()?.inputs as inputs">
-    <div *ngFor="let input of inputs" class="row">
+  @if(story()?.inputs){
+  <div id="input-container">
+    @for(input of story()?.inputs; track $index){
+    <div class="row">
       <label for="{{ input.id }}"> {{ input.label }}: </label>
       <input
         type="text"
@@ -21,10 +21,13 @@
         (change)="onChangeValue($event, input.id)"
       />
     </div>
+    }
     <button id="show-story" (click)="showText.set(!showText())">
       Show Story
     </button>
   </div>
+  }
 </div>
-
-<div id="result" *ngIf="showText()" [innerHTML]="text()"></div>
+@if(showText()){
+<div id="result" [innerHTML]="text()"></div>
+}

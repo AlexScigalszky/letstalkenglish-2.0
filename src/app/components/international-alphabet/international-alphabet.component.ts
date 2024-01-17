@@ -15,7 +15,7 @@ export type InternationalAlphabetLetter = {
 })
 export class InternationalAlphabetComponent {
   show = signal(false);
-
+  writing = false;
   alphabet: InternationalAlphabetLetter[] = [
     { char: 'A', word: 'Alpha' },
     { char: 'B', word: 'Bravo' },

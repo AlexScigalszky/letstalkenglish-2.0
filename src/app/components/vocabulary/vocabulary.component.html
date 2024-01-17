@@ -9,23 +9,25 @@
   </option>
 </select>
 
-<div id="carContainer" *ngIf="carJson() as carJson">
+@if(carJson()){
+<div id="carContainer">
   <img
-    [src]="'./assets/vocabulary/'+carJson.imageSrc"
+    [src]="'./assets/vocabulary/' + carJson()?.imageSrc"
     alt="Car Image"
     [style]="
       'width:{{carJson.imageWidth}}px;height:' +
-      carJson.imageHeight +
+      carJson()?.imageHeight +
       'px;position: absolute;'
     "
   />
-
+  @for(part of carJson()?.parts; track $index){
   <input
-    *ngFor="let part of carJson.parts"
     type="text"
     class="part-input"
     [title]="part.name"
     [style.top]="part.position.top + 'px'"
     [style.left]="part.position.left + 'px'"
   />
+  }
 </div>
+}

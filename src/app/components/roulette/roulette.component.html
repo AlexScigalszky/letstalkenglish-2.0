@@ -1,5 +1,5 @@
 <div>
-    <label for="inputNames">Enter Names (comma-separated):</label>
+  <label for="inputNames">Enter Names (comma-separated):</label>
 </div>
 <input
   #namesInput
@@ -12,4 +12,6 @@
 
 <button (click)="selectRandomPerson()">Select Random Person</button>
 
-<div id="result" *ngIf="selectedPerson() as selected"> {{selected}}</div>
+@if(selectedPerson()){
+<div id="result">{{ selectedPerson() }}</div>
+}

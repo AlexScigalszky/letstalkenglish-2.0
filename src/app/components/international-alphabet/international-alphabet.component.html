@@ -1,6 +1,7 @@
-<a  (click)="show.set(!show())">Hints</a>
+<a (click)="show.set(!show())">Hints</a>
 <ul>
-  <li *ngFor="let letter of alphabet">
+  @for(letter of alphabet; track letter.char) {
+  <li>
     <span>{{ letter.char }}:</span>
     <input
       type="text"
@@ -8,8 +9,9 @@
       placeholder="Enter the word"
     />
 
-    <span id="wordsA" *ngIf="show()">{{ letter.word }}</span>
+    @if(show()){
+    <span id="wordsA">{{ letter.word }}</span>
+    }
   </li>
+  }
 </ul>
-
-

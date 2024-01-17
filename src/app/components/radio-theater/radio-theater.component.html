@@ -2,40 +2,34 @@
 <div class="form">
   <label for="jsonSelector">Participants:</label>
   <select id="jsonSelector">
-    <option
-      *ngFor="let file of scriptFiles"
-      [value]="file.name"
-      (click)="selected.set(file.file)"
-    >
+    @for(file of scriptFiles; track $index){
+    <option [value]="file.name" (click)="selected.set(file.file)">
       {{ file.name }}
     </option>
+    }
   </select>
 </div>
-
-<div id="script-container" *ngIf="scriptData() as scriptData">
+@if(scriptData()){
+<div id="script-container">
   <div class="scene-container">
     <h3>Characters Presentation</h3>
-    <p
-      *ngFor="let char of scriptData.characters; index as i"
-      [class]="'character-line character-' + (i + 1)"
-    >
+    @for(char of scriptData()?.characters; track $index){
+    <p [class]="'character-line character-' + ($index + 1)">
       {{ char }}
     </p>
+    }
   </div>
-  <div
-    *ngFor="let scene of scriptData.scenes; index as j"
-    class="scene-container"
-  >
-    <h3>Scena N° {{ j + 1 }}: {{ scene.title }}</h3>
+  @for(scene of scenes(); track $index){
+  <div class="scene-container">
+    <h3>Scena N° {{ $index + 1 }}: {{ scene.title }}</h3>
 
-    <div
-      *ngFor="let dialogue of scene.dialogues; index as h"
-      [class]="'character-line character-' + (h + 1)"
-    >
-      <div class="speaker">
-        {{ scriptData.characters[dialogue.characterIndex - 1] }}:
-      </div>
+    @for(dialogue of scene.dialogues; track $index){
+    <div [class]="'character-line character-' + ($index + 1)">
+      <div class="speaker">{{ caracters()[dialogue.characterIndex - 1] }}:</div>
       {{ dialogue.line }}
     </div>
+    }
   </div>
+  }
 </div>
+}

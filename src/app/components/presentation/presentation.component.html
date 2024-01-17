@@ -1,10 +1,12 @@
 <h1>Let's introduce ourserves</h1>
-<div *ngIf="current() as item">
-  <div class="corner top-left" id="name">{{ item[0] }}</div>
-  <div class="corner top-right" id="place">{{ item[1] }}</div>
-  <div class="corner bottom-left" id="color">{{ item[2] }}</div>
-  <div class="corner bottom-right" id="hobby">{{ item[3] }}</div>
+@if(current()){
+<div>
+  <div class="corner top-left" id="name">{{ current()[0] }}</div>
+  <div class="corner top-right" id="place">{{ current()[1] }}</div>
+  <div class="corner bottom-left" id="color">{{ current()[2] }}</div>
+  <div class="corner bottom-right" id="hobby">{{ current()[3] }}</div>
 </div>
+}
 
 <div class="space"></div>
 

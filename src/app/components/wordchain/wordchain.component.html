@@ -16,10 +16,12 @@
     <button (click)="addWord()">Add Word</button>
   </div>
 
-  <div id="result-box" *ngIf="finalSentence !== null">
+  @if(finalSentence !== null){
+  <div id="result-box">
     <h3>Final Sentence</h3>
     <div id="result">{{ finalSentence }}</div>
   </div>
+  }
   <br />
 
   <button (click)="showSentence()">Show Sentence</button>

@@ -10,8 +10,13 @@
 </div>
 <button type="button" (click)="restrictNextWord()">ADD WORD</button>
 
-<div id="result" *ngIf="wordAdded() as added">Word added: {{ added }}</div>
-
-<div id="result-list" *ngIf="words.length > 0">
-  <p *ngFor="let word of words">{{ word }}</p>
+@if(wordAdded()){
+<div id="result">Word added: {{ wordAdded() }}</div>
+} 
+@if(words.length > 0){
+<div id="result-list">
+  @for(word of words; track $index){
+  <p>{{ word }}</p>
+  }
 </div>
+}

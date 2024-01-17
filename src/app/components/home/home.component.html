@@ -1,5 +1,7 @@
 <div class="links">
-  <a *ngFor="let item of items()" [routerLink]="['/' + item.path]">
+  @for(item of items(); track $index){
+  <a [routerLink]="['/' + item.path]">
     {{ item.title }}
   </a>
+  }
 </div>
