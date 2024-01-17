@@ -1,0 +1,15 @@
+<a  (click)="show.set(!show())">Hints</a>
+<ul>
+  <li *ngFor="let letter of alphabet">
+    <span>{{ letter.char }}:</span>
+    <input
+      type="text"
+      [id]="'word' + letter.char"
+      placeholder="Enter the word"
+    />
+
+    <span id="wordsA" *ngIf="show()">{{ letter.word }}</span>
+  </li>
+</ul>
+
+

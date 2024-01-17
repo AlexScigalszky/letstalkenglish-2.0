@@ -15,6 +15,7 @@ import { VocabularyComponent } from './components/vocabulary/vocabulary.componen
 import { AbreviationsComponent } from './components/abreviations/abreviations.component';
 import { BlankComponent } from './components/blank/blank.component';
 import { HowDoYouDrawComponent } from './components/how-do-you-draw/how-do-you-draw.component';
+import { InternationalAlphabetComponent } from './components/international-alphabet/international-alphabet.component';
 
 export const routes: Routes = [
   {
@@ -80,7 +81,7 @@ export const routes: Routes = [
   {
     title: 'International Alphabet',
     path: 'international/alphabet',
-    component: BlankComponent,
+    component: InternationalAlphabetComponent,
   },
   {
     title: 'Three thing to do in your life',
