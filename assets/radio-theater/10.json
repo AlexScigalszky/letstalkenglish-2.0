@@ -1,0 +1,261 @@
+{
+  "characters": [
+    "Father (Tom)",
+    "Mother (Lisa)",
+    "Son (Michael)",
+    "Pregnant Girlfriend (Sarah)",
+    "Grandfather (Robert)",
+    "Aunt (Emily)",
+    "Cousin (Alex)",
+    "Family Friend (Chris)",
+    "Neighbor (Olivia)",
+    "Therapist (Dr. Miller)"
+  ],
+  "scenes": [
+    {
+      "title": "Family Gathering",
+      "dialogues": [
+        {
+          "characterIndex": 1,
+          "line": "Hey, everyone. Thanks for coming over."
+        },
+        {
+          "characterIndex": 2,
+          "line": "Of course, Tom. What's going on?"
+        },
+        {
+          "characterIndex": 3,
+          "line": "We have some news. Meet Sarah, my girlfriend, and we're expecting."
+        },
+        {
+          "characterIndex": 4,
+          "line": "Hello, everyone. Nice to meet you all."
+        },
+        {
+          "characterIndex": 5,
+          "line": "Congratulations, Michael! This is wonderful news."
+        },
+        {
+          "characterIndex": 6,
+          "line": "Well, isn't this a surprise. A baby on the way."
+        },
+        {
+          "characterIndex": 7,
+          "line": "I'm thrilled for you both. Another addition to the family!"
+        },
+        {
+          "characterIndex": 8,
+          "line": "That's fantastic. I brought a little gift for the baby."
+        },
+        {
+          "characterIndex": 9,
+          "line": "Oh, this is so exciting! I'm happy for you."
+        },
+        {
+          "characterIndex": 10,
+          "line": "Congratulations! It's a joyous occasion."
+        },
+        {
+          "characterIndex": 1,
+          "line": "Thank you all for your warm wishes. Let's celebrate."
+        }
+      ]
+    },
+    {
+      "title": "Unveiling Family Secrets",
+      "dialogues": [
+        {
+          "characterIndex": 1,
+          "line": "As we celebrate, there's something else I need to share."
+        },
+        {
+          "characterIndex": 2,
+          "line": "What's going on, Dad? You're making it sound serious."
+        },
+        {
+          "characterIndex": 3,
+          "line": "Sarah and I thought it's time to be honest. We're not married."
+        },
+        {
+          "characterIndex": 4,
+          "line": "Wait, what? Dad, are you serious?"
+        },
+        {
+          "characterIndex": 5,
+          "line": "Oh my, I didn't see that coming."
+        },
+        {
+          "characterIndex": 6,
+          "line": "Tom, why didn't you tell us sooner?"
+        },
+        {
+          "characterIndex": 7,
+          "line": "Well, this changes things a bit."
+        },
+        {
+          "characterIndex": 8,
+          "line": "I support you, but secrets within the family aren't healthy."
+        },
+        {
+          "characterIndex": 9,
+          "line": "Let's focus on the positive. A baby is a blessing."
+        },
+        {
+          "characterIndex": 10,
+          "line": "We'll work through this together as a family."
+        },
+        {
+          "characterIndex": 1,
+          "line": "I appreciate your understanding. It's time for openness."
+        }
+      ]
+    },
+    {
+      "title": "Counseling Session",
+      "dialogues": [
+        {
+          "characterIndex": 10,
+          "line": "I've invited Dr. Miller to help us navigate these family dynamics."
+        },
+        {
+          "characterIndex": 1,
+          "line": "Thank you, Dr. Miller. We could use some guidance."
+        },
+        {
+          "characterIndex": 10,
+          "line": "It's not uncommon for families to face challenges. Let's talk."
+        },
+        {
+          "characterIndex": 2,
+          "line": "I'm still processing everything. Dad, why the secrecy?"
+        },
+        {
+          "characterIndex": 1,
+          "line": "I thought it was the right thing. I didn't want to upset anyone."
+        },
+        {
+          "characterIndex": 10,
+          "line": "Communication is crucial in a family. Let's address these concerns."
+        },
+        {
+          "characterIndex": 6,
+          "line": "I just want everyone to be honest with each other."
+        },
+        {
+          "characterIndex": 8,
+          "line": "We can use this as an opportunity to strengthen our bonds."
+        },
+        {
+          "characterIndex": 4,
+          "line": "I hope we can move forward positively."
+        },
+        {
+          "characterIndex": 10,
+          "line": "Open communication and understanding are key."
+        },
+        {
+          "characterIndex": 1,
+          "line": "Let's work on building a healthier family together."
+        }
+      ]
+    },
+    {
+      "title": "Rebuilding Trust",
+      "dialogues": [
+        {
+          "characterIndex": 2,
+          "line": "I need some time to process this, Dad."
+        },
+        {
+          "characterIndex": 3,
+          "line": "I didn't expect this, but let's move forward."
+        },
+        {
+          "characterIndex": 4,
+          "line": "It's important to rebuild trust."
+        },
+        {
+          "characterIndex": 6,
+          "line": "We're a family, and we'll support each other."
+        },
+        {
+          "characterIndex": 8,
+          "line": "Honesty is the foundation of any strong relationship."
+        },
+        {
+          "characterIndex": 10,
+          "line": "This is a chance for growth and understanding."
+        },
+        {
+          "characterIndex": 1,
+          "line": "I'm committed to making amends and rebuilding trust."
+        },
+        {
+          "characterIndex": 5,
+          "line": "Let's focus on the positive aspects, like the upcoming baby."
+        },
+        {
+          "characterIndex": 9,
+          "line": "Time will heal, and we'll emerge stronger."
+        },
+        {
+          "characterIndex": 7,
+          "line": "Family is about overcoming challenges together."
+        },
+        {
+          "characterIndex": 10,
+          "line": "I'm here to support your journey toward a healthier family."
+        }
+      ]
+    },
+    {
+      "title": "Preparing for Parenthood",
+      "dialogues": [
+        {
+          "characterIndex": 1,
+          "line": "As we prepare for the baby, let's strengthen our bonds."
+        },
+        {
+          "characterIndex": 2,
+          "line": "Agreed, Tom. Our family will face challenges, but we'll overcome them."
+        },
+        {
+          "characterIndex": 3,
+          "line": "Mom, Dad, I'm sorry for not being upfront about everything."
+        },
+        {
+          "characterIndex": 6,
+          "line": "We'll work through this as a family."
+        },
+        {
+          "characterIndex": 8,
+          "line": "Let's focus on creating a loving environment for the baby."
+        },
+        {
+          "characterIndex": 4,
+          "line": "I appreciate your understanding. Let's move forward."
+        },
+        {
+          "characterIndex": 10,
+          "line": "Parenthood is a journey that's better faced together."
+        },
+        {
+          "characterIndex": 9,
+          "line": "We can turn these challenges into opportunities for growth."
+        },
+        {
+          "characterIndex": 7,
+          "line": "Family is about unconditional love and support."
+        },
+        {
+          "characterIndex": 5,
+          "line": "Here's to the newest member of our family."
+        },
+        {
+          "characterIndex": 1,
+          "line": "To family, love, and the future."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+    "imageSrc": "car.jpg",
+    "imageWidth": 654,
+    "imageHeight": 469,
+    "parts": [
+        {
+            "name": "Windscreen wiper",
+            "position": {
+                "top": 13,
+                "left": 115
+            }
+        },
+        {
+            "name": "Bonnet",
+            "position": {
+                "top": 61,
+                "left": 38
+            }
+        },
+        {
+            "name": "Grill",
+            "position": {
+                "top": 137,
+                "left": 10
+            }
+        },
+        {
+            "name": "Number plate",
+            "position": {
+                "top": 341,
+                "left": 10
+            }
+        },
+        {
+            "name": "Windscreen",
+            "position": {
+                "top": 96,
+                "left": 188
+            }
+        },
+        {
+            "name": "Roof",
+            "position": {
+                "top": 22,
+                "left": 278
+            }
+        },
+        {
+            "name": "Sun roof",
+            "position": {
+                "top": 82,
+                "left": 337
+            }
+        },
+        {
+            "name": "Wheel arch",
+            "position": {
+                "top": 25,
+                "left": 507
+            }
+        },
+        {
+            "name": "Tyre",
+            "position": {
+                "top": 202,
+                "left": 526
+            }
+        },
+        {
+            "name": "Window",
+            "position": {
+                "top": 320,
+                "left": 421
+            }
+        },
+        {
+            "name": "Door",
+            "position": {
+                "top": 389,
+                "left": 358
+            }
+        },
+        {
+            "name": "Wing mirrow",
+            "position": {
+                "top": 320,
+                "left": 285
+            }
+        },
+        {
+            "name": "Wheel",
+            "position": {
+                "top": 410,
+                "left": 507
+            }
+        },
+        {
+            "name": "Indicator",
+            "position": {
+                "top": 363,
+                "left": 189
+            }
+        },
+        {
+            "name": "Headlight",
+            "position": {
+                "top": 413,
+                "left": 143
+            }
+        }
+    ]
+}
