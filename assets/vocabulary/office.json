@@ -1,0 +1,124 @@
+{
+    "imageSrc": "office.png",
+    "parts": [
+        {
+            "name": "Monitor",
+            "position": {
+                "top": 32,
+                "left": 17
+            }
+        },
+        {
+            "name": "Desktop Organizer",
+            "position": {
+                "top": 32,
+                "left": 171
+            }
+        },
+        {
+            "name": "File",
+            "position": {
+                "top": 37,
+                "left": 303
+            }
+        },
+        {
+            "name": "In-try",
+            "position": {
+                "top": 35,
+                "left": 435
+            }
+        },
+        {
+            "name": "Out-try",
+            "position": {
+                "top": 85,
+                "left": 561
+            }
+        },
+        {
+            "name": "Computer",
+            "position": {
+                "top": 100,
+                "left": 4
+            }
+        },
+        {
+            "name": "Keyboard",
+            "position": {
+                "top": 163,
+                "left": 4
+            }
+        },
+        {
+            "name": "Telephone",
+            "position": {
+                "top": 222,
+                "left": 4
+            }
+        },
+        {
+            "name": "Desk",
+            "position": {
+                "top": 305,
+                "left": 4
+            }
+        },
+        {
+            "name": "Wastebasket",
+            "position": {
+                "top": 488,
+                "left": 4
+            }
+        },
+        {
+            "name": "Swivel chair",
+            "position": {
+                "top": 498,
+                "left": 200
+            }
+        },
+        {
+            "name": "Drawer unit",
+            "position": {
+                "top": 498,
+                "left": 336
+            }
+        },
+        {
+            "name": "Drawer",
+            "position": {
+                "top": 464,
+                "left": 449
+            }
+        },
+        {
+            "name": "Filing cabinet",
+            "position": {
+                "top": 435,
+                "left": 553
+            }
+        },
+        {
+            "name": "Filing cabinet",
+            "position": {
+                "top": 435,
+                "left": 553
+            }
+        },
+        {
+            "name": "notebook",
+            "position": {
+                "top": 205,
+                "left": 575
+            }
+        },
+        {
+            "name": "label",
+            "position": {
+                "top": 271,
+                "left": 625
+            }
+        }
+    ]
+}

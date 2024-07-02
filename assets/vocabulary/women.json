@@ -1,0 +1,124 @@
+{
+    "imageSrc": "women.png",
+    "parts": [
+        {
+            "name": "Head",
+            "position": {
+                "top": 56,
+                "left": 92
+            }
+        },
+        {
+            "name": "Shoulder",
+            "position": {
+                "top": 117,
+                "left": 139
+            }
+        },
+        {
+            "name": "Stomach",
+            "position": {
+                "top": 176,
+                "left": 133
+            }
+        },
+        {
+            "name": "Hand",
+            "position": {
+                "top": 237,
+                "left": 93
+            }
+        },
+        {
+            "name": "Thigh (leg)",
+            "position": {
+                "top": 300,
+                "left": 151
+            }
+        },
+        {
+            "name": "Calf (leg)",
+            "position": {
+                "top": 365,
+                "left": 137
+            }
+        },
+        {
+            "name": "Heel",
+            "position": {
+                "top": 427,
+                "left": 82
+            }
+        },
+        {
+            "name": "Foot",
+            "position": {
+                "top": 490,
+                "left": 82
+            }
+        },
+        {
+            "name": "Neck",
+            "position": {
+                "top": 58,
+                "left": 565
+            }
+        },
+        {
+            "name": "Chest",
+            "position": {
+                "top": 112,
+                "left": 557
+            }
+        },
+        {
+            "name": "Elbow",
+            "position": {
+                "top": 164,
+                "left": 548
+            }
+        },
+        {
+            "name": "Arm",
+            "position": {
+                "top": 213,
+                "left": 577
+            }
+        },
+        {
+            "name": "Finger",
+            "position": {
+                "top": 268,
+                "left": 548
+            }
+        },
+        {
+            "name": "Finger nail",
+            "position": {
+                "top": 327,
+                "left": 505
+            }
+        },
+        {
+            "name": "Knee",
+            "position": {
+                "top": 380,
+                "left": 565
+            }
+        },
+        {
+            "name": "Toe",
+            "position": {
+                "top": 435,
+                "left": 585
+            }
+        },
+        {
+            "name": "Toe nail",
+            "position": {
+                "top": 489,
+                "left": 536
+            }
+        }
+    ]
+}
